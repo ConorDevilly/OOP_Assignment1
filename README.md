@@ -50,7 +50,7 @@ If you hover the mouse over a graph, it will highlight that graph and display in
 
 The drawing and scaling of graphs in Line Graph mode is all animated (animated quite slowly though).
 
-# How this project meets the requirements in the Assignment Spec.
+## How this project meets the requirements in the Assignment Spec.
 Core Features:
 
 * I selected the CVE dataset as the data I wanted to investigate
