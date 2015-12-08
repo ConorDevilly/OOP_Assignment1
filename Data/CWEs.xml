@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CWEList>
+	<CWE id="1">
+		<Name>Location</Name>
+		<Desc>Weaknesses in this category are organized based on which phase they are introduced during the software development and deployment process.</Desc>
+		<cmnName>Location</cmnName>
+		<Parent />
+	</CWE>
+	<CWE id="16">
+		<Name>Configuration</Name>
+		<Desc>Weaknesses in this category are typically introduced during the configuration of the software.</Desc>
+		<cmnName>Configuration</cmnName>
+		<Parent id="1" />
+	</CWE>
+	<CWE id="17">
+		<Name>Code</Name>
+		<Desc>Weaknesses in this category are typically introduced during code development, including specification, design, and implementation.</Desc>
+		<cmnName>Code</cmnName>
+		<Parent id="1"/>
+	</CWE>
+	<CWE id="18">
+		<Name>Source Code</Name>
+		<Desc>Weaknesses in this category are typically found within source code.</Desc>
+		<cmnName>Source Code</cmnName>
+		<Parent id="17"/>
+	</CWE>
+	<CWE id="361">
+		<Name>Time and State</Name>
+		<Desc>Weaknesses in this category are related to the improper management of time and state in an environment that supports simultaneous or near-simultaneous computation by multiple systems, processes, or threads.</Desc>
+		<cmnName>Time and State</cmnName>
+		<Parent id="18"/>
+	</CWE>
+	<CWE id="362">
+		<Name>Race Condition</Name>
+		<Desc>The program contains a code sequence that can run concurrently with other code, and the code sequence requires temporary, exclusive access to a shared resource, but a timing window exists in which the shared resource can be modified by another code sequence that is operating concurrently.</Desc>
+		<cmnName>Race Condition</cmnName>
+		<Parent id="361"/>
+	</CWE>
+	<CWE id="398">
+		<Name>Indicator of Poor Code Quality</Name>
+		<Desc>The code has features that do not directly introduce a weakness or vulnerability, but indicate that the product has not been carefully developed or maintained.</Desc>
+		<cmnName>Poor Code Quality</cmnName>
+		<Parent id="18"/>
+	</CWE>
+	<CWE id="399">
+		<Name>Resource Management Errors</Name>
+		<Desc>Weaknesses in this category are related to improper management of system resources.</Desc>
+		<cmnName>Resource Management</cmnName>
+		<Parent id="398"/>
+	</CWE>
+	<CWE id="254">
+		<Name>Security Features</Name>
+		<Desc>Software security is not security software. Here we are concerned with topics like authentication, access control, confidentiality, cryptography, and privilege management.</Desc>
+		<cmnName>Security Features</cmnName>
+		<Parent id="18"/>
+	</CWE>
+	<CWE id="345">
+		<Name>Insufficient Verification of Data Authenticity</Name>
+		<Desc>The software does not sufficiently verify the origin or authenticity of data, in a way that causes it to accept invalid data.</Desc>
+		<cmnName>Data Authenticity</cmnName>
+		<Parent id="254"/>
+	</CWE>
+	<CWE id="352">
+		<Name>Cross-Site Request Forgery (CSRF)</Name>
+		<Desc>The web application does not, or can not, sufficiently verify whether a well-formed, valid, consistent request was intentionally provided by the user who submitted the request.</Desc>
+		<cmnName>CSRF</cmnName>
+		<Parent id="345"/>
+	</CWE>
+	<CWE id="255">
+		<Name>Credentials Management</Name>
+		<Desc>Weaknesses in this category are related to the management of credentials.</Desc>
+		<cmnName>Credentials Management</cmnName>
+		<Parent id="254"/>
+	</CWE>
+	<CWE id="264">
+		<Name>Permissions, Privileges, and Access Control</Name>
+		<Desc>Weaknesses in this category are related to the management of permissions, privileges, and other security features that are used to perform access control.</Desc>
+		<cmnName>Privilege Errors</cmnName>
+		<Parent id="254"/>
+	</CWE>
+	<CWE id="284">
+		<Name>Improper Access Control</Name>
+		<Desc>The software does not restrict or incorrectly restricts access to a resource from an unauthorized actor.</Desc>
+		<cmnName>Access Control</cmnName>
+		<Parent id="264"/>
+	</CWE>
+	<CWE id="287">
+		<Name>Authentication Issues</Name>
+		<Desc>When an actor claims to have a given identity, the software does not prove or insufficiently proves that the claim is correct.</Desc>
+		<cmnName>Authentication</cmnName>
+		<Parent id="284"/>
+	</CWE>
+	<CWE id="310">
+		<Name>Cryptographic Issues</Name>
+		<Desc>Weaknesses in this category are related to the use of cryptography.</Desc>
+		<cmnName>Cryptography</cmnName>
+		<Parent id="254"/>
+	</CWE>
+	<CWE id="19">
+		<Name>Data Handling</Name>
+		<Desc>Weaknesses in this category are typically found in functionality that processes data.</Desc>
+		<cmnName>Data Handling</cmnName>
+		<Parent id="18"/>
+	</CWE>
+	<CWE id="189">
+		<Name>Numeric Errors</Name>
+		<Desc>Weaknesses in this category are related to improper calculation or conversion of numbers.</Desc>
+		<cmnName>Numberic Error</cmnName>
+		<Parent id="19"/>
+	</CWE>
+	<CWE id="199">
+		<Name>Information Management Errors</Name>
+		<Desc>Weaknesses in this category are related to improper handling of sensitive information.</Desc>
+		<cmnName>Information Management</cmnName>
+		<Parent id="19"/>
+	</CWE>
+	<CWE id="200">
+		<Name>Information Leak / Disclosure</Name>
+		<Desc>An information exposure is the intentional or unintentional disclosure of information to an actor that is not explicitly authorized to have access to that information.</Desc>
+		<cmnName>Information Leak</cmnName>
+		<Parent id="199"/>
+	</CWE>
+	<CWE id="20">
+		<Name>Input Validation</Name>
+		<Desc>The product does not validate or incorrectly validates input that can affect the control flow or data flow of a program.</Desc>
+		<cmnName>Input Validation</cmnName>
+		<Parent id="19"/>
+	</CWE>
+	<CWE id="21">
+		<Name>Path Equivalence</Name>
+		<Desc>Weaknesses in this category can be used to access files outside of a restricted directory (path traversal) or to perform operations on files that would otherwise be restricted (path equivalence).</Desc>
+		<cmnName>Path Equivalence</cmnName>
+		<Parent id="20"/>
+	</CWE>
+	<CWE id="22">
+		<Name>Path Traversal</Name>
+		<Desc>The software uses external input to construct a pathname that is intended to identify a file or directory that is located underneath a restricted parent directory, but the software does not properly neutralize special elements within the pathname that can cause the pathname to resolve to a location that is outside of the restricted directory.</Desc>
+		<cmnName>Path Traversal</cmnName>
+		<Parent id="21"/>
+	</CWE>
+	<CWE id="59">
+		<Name>Link Following</Name>
+		<Desc>The software attempts to access a file based on the filename, but it does not properly prevent that filename from identifying a link or shortcut that resolves to an unintended resource.</Desc>
+		<cmnName>Link Following</cmnName>
+		<Parent id="21"/>
+	</CWE>
+	<CWE id="74">
+		<Name>Injection</Name>
+		<Desc>The software constructs all or part of a command, data structure, or record using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify how it is parsed or interpreted when it is sent to a downstream component.</Desc>
+		<cmnName>Injection</cmnName>
+		<Parent id="20"/>
+	</CWE>
+	<CWE id="134">
+		<Name>Format String Vulnerability</Name>
+		<Desc>The software uses externally-controlled format strings in printf-style functions, which can lead to buffer overflows or data representation problems.</Desc>
+		<cmnName>String Format</cmnName>
+		<Parent id="74"/>
+	</CWE>
+	<CWE id="79">
+		<Name>Cross-Site Scripting (XSS)</Name>
+		<Desc>The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.</Desc>
+		<cmnName>XSS</cmnName>
+		<Parent id="74"/>
+	</CWE>
+	<CWE id="94">
+		<Name>Code Injection</Name>
+		<Desc>The software constructs all or part of a code segment using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the syntax or behavior of the intended code segment.</Desc>
+		<cmnName>Code Injection</cmnName>
+		<Parent id="74"/>
+	</CWE>
+	<CWE id="77">
+		<Name>Command Injection</Name>
+		<Desc>The software constructs all or part of a command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended command when it is sent to a downstream component.</Desc>
+		<cmnName>Command Injection</cmnName>
+		<Parent id="20"/>
+	</CWE>
+	<CWE id="89">
+		<Name>SQL Injection</Name>
+		<Desc>The software constructs all or part of an SQL command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended SQL command when it is sent to a downstream component.</Desc>
+		<cmnName>SQLi</cmnName>
+		<Parent id="77"/>
+	</CWE>
+	<CWE id="78">
+		<Name>OS Command Injections</Name>
+		<Desc>The software constructs all or part of an OS command using externally-influenced input from an upstream component, but it does not neutralize or incorrectly neutralizes special elements that could modify the intended OS command when it is sent to a downstream component.</Desc>
+		<cmnName>OS Command Injections</cmnName>
+		<Parent id="77"/>
+	</CWE>
+</CWEList>
