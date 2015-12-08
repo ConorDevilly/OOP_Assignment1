@@ -16,6 +16,7 @@ For this project, I extract the CWE fields from the CVE data from 2003 - 2015.
 I put all of these fields into an SQLite database and create graphs based on that information.
 
 My reason for using an SQLite database is:
+
 1. The CVE data comes to about 400MB in total. This is a lot of data to go through everytime the program is run. So to reduce load times, I make a small program that extracts the CWE field from each CVE and put it in an SQLite database that the main program will use.
 2. There's a lot of different graphs that can be toggled on and off in this project and its much easier to select the data you want using SQL rather than Java.
 
@@ -51,20 +52,22 @@ The drawing and scaling of graphs in Line Graph mode is all animated (animated q
 
 # How this project meets the requirements in the Assignment Spec.
 Core Features:
-I selected the CVE dataset as the data I wanted to investigate
-This dataset is loaded into my program
-It includes a Line Graph. We covered Line Graphs in class.
-It includes a Word Cloud. We did not cover Word Clouds in class.
-It includes a menu (kind of...the icons on the right are my menu).
-Simple stats about the dataset are included in Pie Chart mode
+
+* I selected the CVE dataset as the data I wanted to investigate
+* This dataset is loaded into my program
+* It includes a Line Graph. We covered Line Graphs in class.
+* It includes a Word Cloud. We did not cover Word Clouds in class.
+* It includes a menu (kind of...the icons on the right are my menu).
+* Simple stats about the dataset are included in Pie Chart mode
 
 Advanced Features:
+
 (I'm not entirely sure what counts as an Advanced Feature so I'm just going to mention what I think is an Advanced Feature)
-ControlP5 is used to implement the GUI
-Classes are used, along with a bit on inheritance.
-Line graphs scale in proportion to the maximum value of all the graphs selected.
-The drawning and scaling of Line Graphs is animated.
-Data is taken from XML documents rather than CSV or plain text files.
-SQL is used to store and retrieve the data.
-(Extensive) use of HashMaps and LinkedHashMaps.
-Line graphs can be highlighted (Advanced feature as figuring out if the mouse is on a line is really difficult).
+* ControlP5 is used to implement the GUI
+*Classes are used, along with a bit on inheritance.
+* Line graphs scale in proportion to the maximum value of all the graphs selected.
+* The drawning and scaling of Line Graphs is animated.
+* Data is taken from XML documents rather than CSV or plain text files.
+* SQL is used to store and retrieve the data.
+* Use of HashMaps and LinkedHashMaps.
+* Line graphs can be highlighted (Advanced feature as figuring out if the mouse is on a line is really difficult).
