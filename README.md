@@ -1,7 +1,7 @@
 # OOP_Visualisation_Assignment
 The objective of this assignment is to "create a striking visualisation of a dataset using Processing".
 
-# Background
+## Background
 The dataset I have chosen to use is the CVE data from 2003 - 2015.
 CVE stands for "Common Vulnerabilities and Exposures". 
 It is "a dictionary of publicly known information security vulnerabilities and exposures".
@@ -27,7 +27,7 @@ To download the data this project is based on go to:
 https://nvd.nist.gov/download.cfm
 And download each XML (Version 2.0) file from 2003 - 2015.
 
-# The Project Itself
+## The Project Itself
 There are three graphs to chose from: a word cloud, a line graph and a pie chart.
 By default, the project starts in Word Cloud mode.
 To select a different graph mode, click the associated icon on the left of the program.
